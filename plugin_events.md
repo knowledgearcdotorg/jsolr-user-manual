@@ -92,8 +92,20 @@ Fires when an item is saved.
 
 ### Parameters
 * string ```$context``` The context of the item being saved.
-* StdClass ```$item``` The item being deleted (must have an id property).
+* StdClass ```$item``` The item being saved (must have an id property).
 * bool ```$isNew``` True if the item is new, false otherwise.
+
+### Return
+None
+
+## onJSolrAfterDelete
+
+### Description
+Fires when an item is deleted.
+
+### Parameters
+* string ```$context``` The context of the item being saved.
+* StdClass ```$item``` The item being deleted (must have an id property).
 
 ### Return
 None
