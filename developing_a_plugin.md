@@ -48,7 +48,7 @@ You may also wish to index information about the category the item is a part of.
 * **category_s** The category name as a facet.
 * **category_i** The id of the category.
 
-You may consider storing additional data for custom faceting and sorting. It is recommend you use the ```_s``` suffix for single values and ```_ss``` for multiple values. Consider using the appropriate suffix for values that are not of type string such as ```_tdt``` for date.
+You may consider storing additional data for custom faceting and sorting. It is recommend you use the *_s* suffix for single values and *_ss* for multiple values. Consider using the appropriate suffix for values that are not of type string such as *_tdt* for date.
 
 ### Putting it all together
 
