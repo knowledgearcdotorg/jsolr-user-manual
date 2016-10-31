@@ -233,3 +233,6 @@ class PlgJSolrExample extends \JSolr\Plugin
 ```
 
 ## Detecting Changes in Content
+JSolr intercepts all content plugin events, so if your component implements the onContent events, and you have implemented your JSolr plugin, JSolr will automatically modify the index when your component's content changes.
+
+If your component uses a different plugin architecture, you will need to manually manage content changes by implementing the onJSolrAfterSave, onJSolrAfterDelete and onJSolrAfterChange events in your JSolr plugin.
