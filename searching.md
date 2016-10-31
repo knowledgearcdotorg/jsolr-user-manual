@@ -4,4 +4,6 @@ JSolr provides powerful search capabilities which can be further enhanced throug
 ## Dimensions
 JSolr provides a way to display customized search results through the use of a feature called Dimensions. Dimensions are configured to show results which match certain filtering criteria, allowing you to have, for example, results tailored for showing images or downloadable files.
 
-Because dimensions provide results 
+You will need to create a template override to display a dimension's search results.
+
+Create the template override for your dimension and drop it into templates/templatename/html/com_jsolr/search/, where templatename is the name of the enabled template.
