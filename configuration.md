@@ -5,4 +5,4 @@ JSolr makes it easy to embed archived items within Joomla!.
 
 ## Component Options
 
-JCar provides various component-wide settings; these are available from the "Options" button in the JCar control panel.
+JSolr provides various component-wide settings; these are available from the "Options" button in the JSolr control panel.
