@@ -117,7 +117,8 @@ Fires when the state of an item changes.
 
 ### Parameters
 * string ```$context``` The context of the changed items.
-* StdClass ```$item``` An array of ids of the changed items.
+* array ```$pks``` An array of ids of the changed items.
+* int ```$value``` The new state.
 
 ### Return
 None
