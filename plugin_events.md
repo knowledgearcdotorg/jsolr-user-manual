@@ -85,6 +85,19 @@ None
 ### Return
 None
 
+## onJSolrIndexUpdate
+
+### Description
+Fires the index update event.
+
+The index update event is used to index items that have been created or modified since the index date. It should be used for content that are being indexed from an external source. For content that implements Joomla! content events, use onContentAfterSave, onContentAfterDelete and onContentStateChanged instead.
+
+### Parameters
+None
+
+### Return
+None
+
 ## onJSolrAfterSave
 
 ### Description
