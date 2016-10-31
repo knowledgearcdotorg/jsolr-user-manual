@@ -4,4 +4,5 @@
 * [Server Requirements](server_requirements.md)
 * [Installation](installation.md)
 * [Configuration](configuration.md)
+* Extending JSolr
 
