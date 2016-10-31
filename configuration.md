@@ -3,6 +3,8 @@ JSolr makes it easy to embed archived items within Joomla!.
 
 **NOTE:** Some of the following topics assume you have a working knowledge of configuring components and creating menu items.
 
+**NOTE:** This manual does not cover the installation and configuration of Apache Solr nor any topics related to Solr query building. For Solr-related information, check out [their comprehensive wiki](https://cwiki.apache.org/confluence/display/solr/Apache+Solr+Reference+Guide).
+
 ## Component Options
 JSolr provides various component-wide settings; these are available from the "Options" button in the JSolr control panel.
 
