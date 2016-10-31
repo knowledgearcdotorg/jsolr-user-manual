@@ -50,6 +50,50 @@ You may also wish to index information about the category the item is a part of.
 
 You may consider storing additional data for custom faceting and sorting. It is recommend you use the *_s* suffix for single values and *_ss* for multiple values. Consider using the appropriate suffix for values that are not of type string such as *_tdt* for date.
 
+#### Example
+```
+protected function prepare($source)
+{
+    $lang = $this->getLanguage($source->language, false);
+    $author = JFactory::getUser($source->created_by);
+    $category = JCategories::getInstance('content')->get($source->catid);
+
+    $array = array();
+
+    $array['id'] = $this->buildId($source->id);
+    $array['id_i'] = $source->id;
+    $array['name'] = $source->title;
+    $array["author"] = array($author->name);
+    $array["author_ss"] = array($this->getFacet($author->name));
+    $array["author_i"] = $author->id;
+    $array["title_txt_$lang"] = $source->title;
+    $array['alias_s'] = $source->alias;
+    $array['context_s'] = $this->get('context');
+    $array['lang_s'] = $source->language;
+    $array['access_i'] = $source->access;
+    $array["category_txt_$lang"] = $category->title;
+    $array["category_s"] = $this->getFacet($category->title); // for faceting
+    $array["category_i"] = $category->id;
+    $array["parent_id_i"] = $source->catid;
+
+    $created = JFactory::getDate($source->created);
+    $modified = JFactory::getDate($source->modified);
+
+    if ($created > $modified) {
+        $modified = $created;
+    }
+
+    $array['created_tdt'] = $created->format('Y-m-d\TH:i:s\Z', false);
+    $array['modified_tdt'] = $modified->format('Y-m-d\TH:i:s\Z', false);
+
+    foreach ($source->tags->getItemTags('com_content.article', $source->id) as $tag) {
+        $array["tag_ss"][] = $tag->title;
+    }
+
+    return $array;
+}
+```
+
 ### Putting it all together
 
 ### Provide a link for each result
