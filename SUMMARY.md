@@ -5,6 +5,7 @@
 * [Installation](installation.md)
 * [Configuration](configuration.md)
    * Browsing
+   * Searching
 * [Indexing](indexing.md)
 * [Extending JSolr](extending_jsolr.md)
    * [Plugin Events](plugin_events.md)
