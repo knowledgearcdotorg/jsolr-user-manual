@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [Server Requirements](chapter1.md)
+* [Server Requirements](server_requirements.md)
 
