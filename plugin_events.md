@@ -59,13 +59,28 @@ Fires for each record which is retrieved from the index.
 ### Return
 None
 
-## onJSolrSearchPrepareData
+## onJSolrIndex
 
 ### Description
-Fires for each record which is retrieved from the index.
+Fires the indexing event.
+
+Derived classes should override the index() method when implementing a custom index task.
 
 ### Parameters
-* \Solarium\QueryType\Update\Query\Document\Document ```$document``` A single record from the index.
+None
+
+### Return
+None
+
+## onJSolrPurge
+
+### Description
+Fires the purging event.
+
+Derived classes should override the purge() method when implementing a custom purge task.
+
+### Parameters
+None
 
 ### Return
 None
