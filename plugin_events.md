@@ -47,3 +47,25 @@ Fires after the search query is executed.
 
 ### Return
 None
+
+## onJSolrSearchPrepareData
+
+### Description
+Fires for each record which is retrieved from the index.
+
+### Parameters
+* \Solarium\QueryType\Update\Query\Document\Document ```$document``` A single record from the index.
+
+### Return
+None
+
+## onJSolrSearchPrepareData
+
+### Description
+Fires for each record which is retrieved from the index.
+
+### Parameters
+* \Solarium\QueryType\Update\Query\Document\Document ```$document``` A single record from the index.
+
+### Return
+None
