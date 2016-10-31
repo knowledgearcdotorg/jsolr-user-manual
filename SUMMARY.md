@@ -4,7 +4,7 @@
 * [Server Requirements](server_requirements.md)
 * [Installation](installation.md)
 * [Configuration](configuration.md)
-   * Searching
+   * [Searching](browsing.md)
    * Browsing
 * [Indexing](indexing.md)
 * [Extending JSolr](extending_jsolr.md)
