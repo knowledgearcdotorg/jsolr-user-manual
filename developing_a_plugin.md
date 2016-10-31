@@ -32,7 +32,7 @@ In most cases this can be done using an existing component's JModel implementati
 To retrieve items, you will need to override two abstract methods:
 
 * **getTotal()** Gets the total number of items to index,
-* **getItems()** Gets the items for indexing. This is paged dependent on the parent class' indexing limits.
+* **getItems()** Gets the items for indexing.
 
 Check out the JSolr - Content plugin for an example of [retrieving items using JModelLegacy](https://github.com/knowledgearcdotorg/jsolr/blob/master/plugins/jsolr/content/content.php#L29).
 
