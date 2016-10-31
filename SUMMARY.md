@@ -5,4 +5,5 @@
 * [Installation](installation.md)
 * [Configuration](configuration.md)
 * [Extending JSolr](extending_jsolr.md)
+   * Plugin Events
 
