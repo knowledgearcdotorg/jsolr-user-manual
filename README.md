@@ -1,3 +1,4 @@
-# My Awesome Book
+JSolr - Solr for Joomla!
+=======
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+JSolr integrates the [Apache Solr](https://lucene.apache.org/solr/) search server with the [Joomla!](https://www.joomla.org/) content management system.
