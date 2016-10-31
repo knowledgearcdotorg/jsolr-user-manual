@@ -23,6 +23,19 @@ class PlgJSolrExample extends \JSolr\Plugin
 ```
 
 ### Get the items for indexing
+When indexing for the first time or rebuilding the index after a purge, items need to be retrieved in bulk by \JSolr\Plugin's index method.
+
+The parent class \JSolr\Plugin expects items to be retrieved in a way that will not overburden Joomla! or the underlying database. This can be done by overriding the getItems method, which is passed some paging information to reduce load on the database.
+
+In most cases this can be done using an existing component's JModel implementation, which provides a getItems method for easy retrieval.
+
+To retrieve items, you will need to override two abstract methods:
+
+* **getTotal()** Gets the total number of items to index,
+* **getItems()** Gets the items for indexing. This is paged dependent on the parent class' indexing limits.
+
+Check out the JSolr - Content plugin for an example of [retrieving items using JModelLegacy](https://github.com/knowledgearcdotorg/jsolr/blob/master/plugins/jsolr/content/content.php#L29).
+
 ### Prepare the data for indexing
 Next you will need to specify the data that needs to be indexed. To do this, override \JSolr\Plugin's prepare method.
 
@@ -86,7 +99,7 @@ protected function prepare($source)
     $array['created_tdt'] = $created->format('Y-m-d\TH:i:s\Z', false);
     $array['modified_tdt'] = $modified->format('Y-m-d\TH:i:s\Z', false);
 
-    foreach ($source->tags->getItemTags('com_content.article', $source->id) as $tag) {
+    foreach ($source->tags->getItemTags('com_example.content', $source->id) as $tag) {
         $array["tag_ss"][] = $tag->title;
     }
 
@@ -94,8 +107,37 @@ protected function prepare($source)
 }
 ```
 
-### Putting it all together
-
 ### Provide a link for each result
+When JSolr displays a list of results, the user should be able to click on each result and view the resulting content. JSolr doesn't handle content urls, so your plugin will need to add this to each relevant result.
+
+To add the link, you simply intercept each item, check the context, and, if it matches the context of your plugin, add the url to the item. The recommended method is to add the link via the onJSolrSearchPrepareData event.
+
+#### Example
+```
+public function onJSolrSearchPrepareData($document)
+{
+    if ($this->get('context') == $document->context_s) {
+        require_once(JPATH_ROOT."/components/com_example/helpers/route.php");
+
+        $document->link = ExampleHelperRoute::getContentRoute($document->id_i, $document->parent_id_i);
+    }
+}
+```
+
+### Putting it all together
+We now have all the parts required for indexing content and making it easily searchable.
+
+#### Example
+```
+\JLoader::registerNamespace('JSolr', JPATH_PLATFORM);
+
+// Extend the JSolr\Plugin class. Ensure the plugin name matches Joomla!'s plugin naming convention.
+class PlgJSolrExample extends \JSolr\Plugin
+{
+    protected $context = "com_example.content";
+    
+    
+}
+```
 
 ## Detecting Changes to Content
