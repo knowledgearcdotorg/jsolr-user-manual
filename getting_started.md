@@ -6,6 +6,12 @@ This getting started is to get your JSolr search up and running as quickly as po
 * [Browsing](browsing.md)
 * [Extending JSolr](extending_jsolr.md)
 
+## Step 1: Get JSolr
+
+## Step 2: Install
+The JSolr Core is deployed as a Joomla! package. Follow the installation instructions 
+
+
 
 
 
