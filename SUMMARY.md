@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Server Requirements](server_requirements.md)
+* [Quick Start](quick_start.md)
 * [Installation](installation.md)
 * [Configuration](configuration.md)
 * [Indexing](indexing.md)
@@ -10,5 +11,4 @@
 * [Extending JSolr](extending_jsolr.md)
    * [Plugin Events](plugin_events.md)
    * [Developing a Plugin](developing_a_plugin.md)
-* [Quick Start](quick_start.md)
 
