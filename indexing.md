@@ -1,4 +1,5 @@
 # Indexing
+The first thing you will need to do when you install JSolr is to index some Joomla! content.
 
 JSolr indexes content in one of two ways:
 1. Via the command line tool,
