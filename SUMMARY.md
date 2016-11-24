@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Server Requirements](server_requirements.md)
 * [Installation](installation.md)
-* [Quick Start](getting_started.md)
+* [Getting Started](getting_started.md)
 * [Configuration](configuration.md)
 * [Indexing](indexing.md)
 * [Searching](searching.md)
