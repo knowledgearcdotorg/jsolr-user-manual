@@ -11,8 +11,10 @@
     * [Dimensions](dimensions.md)
     * [XML Form Definitions](xml-form-definitions.md)
     * [Form Fields](form-fields.md)
-        * CalendarTool
+        * [CalendarTool](calendartool.md)
         * Facets
+        * QueryFilter
+        * SearchTool
         * Sort
 * [Browsing](browsing.md)
 * [Extending JSolr](extending_jsolr.md)
