@@ -6,13 +6,13 @@ JSolr uses [Joomla!'s XML form definitions](https://docs.joomla.org/XML_JForm_fo
 
 ## JSolr Form Fields
 
-JSolr provides a number of form fields specifically desinged for querying and filtering search results. JSolr form fields must be used for [field linking](#field-linking) or when you want JSolr to apply a query filter without exposing Solr index field names.
+JSolr provides a number of form fields specifically desinged for querying, filtering and sorting search results. JSolr form fields must be used for [field linking](#field-linking) or when you want JSolr to apply a query filter without exposing Solr index field names.
 
 See [Form Fields](/form-fields.md) for more information.
 
 ## Search Form Syntax
 
-A JSolr Search XML form file looks very similar to any other Joomla! form definition. The standard search form definitions are stored in a file called search.xml which is located in `/path/to/joomla/site/components/com_jsolr/models/forms`. 
+A JSolr Search XML form file looks very similar to any other Joomla! form definition. The standard search form definitions are stored in a file called search.xml which is located in `/path/to/joomla/site/components/com_jsolr/models/forms`.
 
 Below is the basic syntax which you can extend to provide highly customized searches for your users:
 
@@ -190,7 +190,7 @@ Field linking is a concept used by JSolr when an advanced form field value is su
 
 Field linking allows values to be automatically processed by JSolr without exposing Solr field names such as author\_ss or date\_tdt to the end user, improving search engine friendliness, making search filters easier to remember for end users.
 
-To better understand field linking, let's take a look at the "in" filter field which limits JSolr to searching within only the title or the content. 
+To better understand field linking, let's take a look at the "in" filter field which limits JSolr to searching within only the title or the content.
 
 In search.xml you will see:
 
@@ -208,7 +208,7 @@ and in advanced.xml you will see:
 </field>
 ```
 
-Now, let's assume that the user has used the advanced search to specify that they only want to search in the title. In order for JSolr to apply the "in" filter, it needs to know that the "in" filter exists. Therefore, search.xml must contain a definition for the "in" field. 
+Now, let's assume that the user has used the advanced search to specify that they only want to search in the title. In order for JSolr to apply the "in" filter, it needs to know that the "in" filter exists. Therefore, search.xml must contain a definition for the "in" field.
 
 Also notice that search.xml uses the field type `jsolr.queryfilter`. While you can use any type of Joomla! form field in advanced.xml, you must use the [JSolr form fields](#jsolr-form-fields) if you want queries and filters to automatically be applied to your search results.
 
