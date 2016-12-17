@@ -7,6 +7,8 @@
 * [Configuration](configuration.md)
 * [Indexing](indexing.md)
 * [Searching](searching.md)
+    * [Dimensions](dimensions.md)
+    * Customizing the User Experience
 * [Form Fields](form-fields.md)
     * CalendarTool
     * Facets
