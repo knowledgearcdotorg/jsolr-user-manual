@@ -9,6 +9,11 @@
 * [Searching](searching.md)
 * [Browsing](browsing.md)
 * [Extending JSolr](extending_jsolr.md)
-   * [Plugin Events](plugin_events.md)
-   * [Developing a Plugin](developing_a_plugin.md)
+    * [Customizing Search](customizing-search.md)
+    * [Form Fields](form-fields.md)
+        * CalendarTool
+        * Facets
+        * Sort
+    * [Plugin Events](plugin_events.md)
+    * [Developing a Plugin](developing_a_plugin.md)
 
