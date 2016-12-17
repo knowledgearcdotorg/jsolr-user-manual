@@ -7,13 +7,12 @@
 * [Configuration](configuration.md)
 * [Indexing](indexing.md)
 * [Searching](searching.md)
+* [Form Fields](form-fields.md)
+    * CalendarTool
+    * Facets
+    * Sort
 * [Browsing](browsing.md)
 * [Extending JSolr](extending_jsolr.md)
-    * [Customizing Search](customizing-search.md)
-    * [Form Fields](form-fields.md)
-        * CalendarTool
-        * Facets
-        * Sort
     * [Plugin Events](plugin_events.md)
     * [Developing a Plugin](developing_a_plugin.md)
 
