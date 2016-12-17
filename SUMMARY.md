@@ -13,7 +13,7 @@
     * [Form Fields](form-fields.md)
         * [CalendarTool](calendartool.md)
         * [Facets](facets.md)
-        * QueryFilter
+        * [QueryFilter](queryfilter.md)
         * SearchTool
         * Sort
 * [Browsing](browsing.md)
