@@ -27,12 +27,11 @@ Now you can specify the dimension settings, which looks much like a standard Joo
 * Title = "Images"
 * Filter Query = "context\_s:custom.image"
 
-Click "Save & Close" and you will see the new dimension in the dimensions list.
+Click "Save & Close" and you will see the new dimension in the dimensions list.  
 There are two important things to note:
 
 1. The alias will be automatically generated based on the "Title" field's value. In this case it will be "images",
 2. We want to limit results to only those matching the images you have indexed using your custom crawler, hence we specify "context\_s:custom.image" where context\_s is the name of the Solr field we are going to limit results to and `custom.image` is the value we will filter on.
-
 
 If you go to your Joomla! site's front end and run a search, you will see tabs available underneath the query box. "Images" will now be included in that tab list.
 
@@ -40,7 +39,7 @@ If you go to your Joomla! site's front end and run a search, you will see tabs a
 
 You now need to create a custom HTML template for your new dimension. We'll assume you are using the default protostar template.
 
-Create a new file called results\_images.php under /path/to/your/joomla/site/templates/protostar/html/com\_jsolr/search. You may also need to create the directories underneath the html directory.
+Create a new file called `results_images.php` under `/path/to/your/joomla/site/templates/protostar/html/com_jsolr/search.` You may also need to create the directories underneath the html directory.
 
 Inside this template add the following code and save:
 
@@ -57,5 +56,25 @@ Go back to the front-end of your site. Click on the `Images` tab. You should see
 
 You can also add facet filtering and additional query inputs to your new image search which will only apply to your image queries. For example, you may want to add a dropdown list of image types so a user can view just the png images.
 
+Create another file called images.xml under `/path/to/your/joomla/site/templates/protostar/html/com_jsolr/forms`.
 
+Open this file and add the following code, then save:
+
+```
+        <field
+            type="jsolr.searchtool"
+            name="type"
+            filter="type_s"
+            label="Image Type"
+            default="">
+           <option value="">All</option>
+           <option value="jpeg">JPEG</option>
+           <option value="png">PNG</option>
+           <option value="svg">SVG</option>
+        </field>
+```
+
+This will load a drop down box underneath the query box with a list of types.
+
+See [XML Form Definitions](/xml-form-definitions.md) for more information about customizing search queries and filters.
 
