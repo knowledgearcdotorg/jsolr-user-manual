@@ -12,7 +12,7 @@
     * [XML Form Definitions](xml-form-definitions.md)
     * [Form Fields](form-fields.md)
         * [CalendarTool](calendartool.md)
-        * Facets
+        * [Facets](facets.md)
         * QueryFilter
         * SearchTool
         * Sort
