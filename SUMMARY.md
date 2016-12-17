@@ -7,7 +7,7 @@
 * [Configuration](configuration.md)
 * [Indexing](indexing.md)
 * [Searching](searching.md)
-    * Advanced Search
+    * [Advanced Search](advanced-search.md)
     * [Dimensions](dimensions.md)
     * [XML Form Definitions](xml-form-definitions.md)
     * [Form Fields](form-fields.md)

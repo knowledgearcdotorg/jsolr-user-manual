@@ -7,8 +7,8 @@ However, there may be times when additional filters or advanced search may enhan
 Extend JSolr's search capabilities by:
 
 * Providing an advanced search form for targeted queries and filters
-*  Using dimensions for targeting specific result types
-* Customizing the user experience with JForm XML form definitions
+* [Using dimensions for targeting specific result types](/dimensions.md)
+* [Customizing the user experience with JForm XML form definitions](/xml-form-definitions.md)
 
 
 
