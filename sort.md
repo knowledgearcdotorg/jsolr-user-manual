@@ -19,19 +19,20 @@ The JSolr.Sort field must include one or more options. Depending on what is sele
 
 ### Option Parameters
 
-* `sort` _\(mandatory\)_ the field to sort on. Must correspond to an indexed field name in Apache Solr which supports sorting,
+* value \(mandatory\) the field value to sort on. Value is used as an alias for the actual Apache Solr sort field,
+* `sort` _\(mandatory\)_ the field to sort on. Must correspond to an indexed field name in Apache Solr which supports sorting. Must be specified unless the value is an empty string \(I.e. don't sort\),
 * `direction` _\(optional\)_ the order of the sorted results. Can be either `asc` for ascending or `desc` for descending.
 
 ## Example
 
 ```
 <field
-	name="sort"
-	type="jsolr.sort"
-	label="Sort By"
-	class="jsolr-dropdown">
-	<option value="">Relevance</option>
-	<option value="date" field="date_tdt" direction="desc">Date</option>
+    name="sort"
+    type="jsolr.sort"
+    label="Sort By"
+    class="jsolr-dropdown">
+    <option value="">Relevance</option>
+    <option value="date" sort="date_tdt" direction="desc">Date</option>
 </field>
 ```
 
