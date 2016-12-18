@@ -15,7 +15,7 @@
         * [Facets](facets.md)
         * [QueryFilter](queryfilter.md)
         * SearchTool
-        * Sort
+        * [Sort](sort.md)
 * [Browsing](browsing.md)
 * [Extending JSolr](extending_jsolr.md)
     * [Plugin Events](plugin_events.md)
