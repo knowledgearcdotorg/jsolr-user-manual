@@ -184,31 +184,5 @@ Because Advanced Search expects these fields exist, it is highly recommended you
 
 The AS or Advanced Search fieldset specifies additional filters for providing highly customized search results.
 
-## Field Linking
 
-Field linking is a concept used by JSolr when an advanced form field value is submitted to the search results and vice versa.
-
-Field linking allows values to be automatically processed by JSolr without exposing Solr field names such as author\_ss or date\_tdt to the end user, improving search engine friendliness, making search filters easier to remember for end users.
-
-To better understand field linking, let's take a look at the "in" filter field which limits JSolr to searching within only the title or the content.
-
-In search.xml you will see:
-
-```XML
-<field type="jsolr.queryfilter" name="in">
-```
-
-and in advanced.xml you will see:
-
-```XML
-<field name="in" type="list" label="Search">
-    <option value="">Anywhere</option>
-    <option value="title_txt_*">Only in the title</option>
-    <option value="content_txt_*">Only in the body</option>
-</field>
-```
-
-Now, let's assume that the user has used the advanced search to specify that they only want to search in the title. In order for JSolr to apply the "in" filter, it needs to know that the "in" filter exists. Therefore, search.xml must contain a definition for the "in" field.
-
-Also notice that search.xml uses the field type `jsolr.queryfilter`. While you can use any type of Joomla! form field in advanced.xml, you must use the [JSolr form fields](#jsolr-form-fields) if you want queries and filters to automatically be applied to your search results.
 
