@@ -112,12 +112,38 @@ You can also mix ranges with other search queries:
 
 > type\_s:"unsolved x-file" date\_s:\[1992-01-01 TO 2016-01-01\]
 
+### Proximity Query
+
+A proximity search tells Solr to search for particular words that are within a particular distance from one another:
+
+> "mulder scully"~10
+
+In this example, the terms mulder and scully must be within 10 words of each other.
+
+### Boost Query {#TheStandardQueryParser-FuzzySearches}
+
+You can give certain terms more relevance over other terms by "boosting" the particular term:
+
+> mulder^10 scully
+
+The above boost will make the term mulder more relevant than scully.
+
+You can also boost entire phrases:
+
+> "The Lone Gunmen"^10 "The X-Files"
+
+And, you can specify boosts for search terms on a particular field:
+
+> author:\(mulder AND scully\)^10 author:\(byers AND Frohike AND Langly\) title:"The Lone Gunmen"
+
+Boost queries differ from boost fields in that you are boosting only the query not the entire field.
+
 ### Futher Reading
 
 The above topics only cover the basics of what is available with Solr querying. For more information about these and other query syntax, check out:
 
 * [Solr's Query Syntax](https://cwiki.apache.org/confluence/display/solr/Query+Syntax+and+Parsing)
-
+* 
 ## Field Aliasing
 
 ## Advanced Features
