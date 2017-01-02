@@ -16,11 +16,19 @@ The simplest query is a single term query. A single term query is just that; a s
 
 > Joomla
 
+### Query with Field Name
+
 With Solr you can also narrow your search to a particular field, for example:
 
 > title:Joomla
 
 Here we narrow the query to only search for the term in the title.
+
+Multiple field names can be applied to a single query:
+
+> title:Joomla type\_s:article
+
+Using field names can be used in all kinds of queries and will add precision when searching for specific terms, phrases or ranges.
 
 ### Phrase Query
 
@@ -31,8 +39,10 @@ A phrase query is much like a basic query except you are searching for multiple 
 You can also use more natural language when specifying a phrase query, for example:
 
 > Using JSolr with Joomla
->
-> I want to believe
+
+Adding a field name will add precision to your phrase:
+
+> title:I want to believe
 
 You can even ask questions:
 
@@ -49,6 +59,10 @@ An exact match query is an extension of the Phrase Query. With an exact match, y
 Specifying an exact match query is simple; just wrap your phrase in double quotes:
 
 > "Installing and configuring Joomla!"
+
+Using quotes is also a good way to search for terms and phrases which may have special characters such as boolean operators \(which we will cover next\):
+
+> title:"The X-Files"
 
 ### Boolean Query
 
@@ -82,13 +96,33 @@ One final feature of Solr is the ability to use both types of operators in the s
 
 > +\(joomla AND content AND management AND system\) -\(Wordpress AND Drupal\)
 >
-> \(+Joomla +cms\) OR \(+Wordpress +cms\) NOT drupal
+> \(+scully +mulder\) OR \(+reyes +doggett\) NOT skinner
+
+We can also use field names to more accurately target our query. For example, if we want to search for authors:
+
+> title:"The X-Files" author:\(+mulder +scully\) OR author:\(reyes OR doggett\) -author:skinner
+
+### Range Query
+
+Range queries allow you to search the index for records which fall between a lower and an upper value.
+
+> price:\[100 TO 200\]
+
+You can also mix ranges with other search queries:
+
+> type\_s:"unsolved x-file" date\_s:\[1992-01-01 TO 2016-01-01\]
+
+### Futher Reading
+
+The above topics only cover the basics of what is available with Solr querying. For more information about these and other query syntax, check out:
+
+* \[Solr Query Syntax\]\(https://cwiki.apache.org/confluence/display/solr/The+Extended+DisMax+Query+Parser\)
 
 ## Field Aliasing
 
-## Further Reading
+## Advanced Features
 
-However, there may be times when additional filters or advanced search may enhance the user experience. That's why JSolr provides powerful search capabilities which can be further enhanced through advanced configuration.
+There may be times when additional filters or advanced search may enhance the user experience. That's why JSolr provides powerful search capabilities which can be further enhanced through advanced configuration.
 
 Extend JSolr's search capabilities by:
 
