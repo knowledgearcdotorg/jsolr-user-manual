@@ -9,7 +9,6 @@
 * [Searching](searching.md)
     * [Advanced Search](advanced-search.md)
     * [Dimensions](dimensions.md)
-    * Query Aliasing
     * [XML Form Definitions](xml-form-definitions.md)
     * [Form Fields](form-fields.md)
         * [CalendarTool](calendartool.md)
