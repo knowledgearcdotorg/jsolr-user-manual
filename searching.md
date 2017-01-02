@@ -143,8 +143,8 @@ Boost queries differ from boost fields in that you are boosting only the query n
 The above topics only cover the basics of what is available with Solr querying. For more information about these and other query syntax, check out:
 
 * [Solr's Query Syntax](https://cwiki.apache.org/confluence/display/solr/Query+Syntax+and+Parsing) - Comprehensive documentation about querying in Solr
-* \[Writing Queries in Solr\]\([https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser\\#TheStandardQueryParser-SpecifyingTermsfortheStandardQueryParser](https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser#TheStandardQueryParser-SpecifyingTermsfortheStandardQueryParser) - Documentation and examples of the various methods of querying in Solr
-* \[Boolean Search\]\([https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser\\#TheStandardQueryParser-BooleanOperatorsSupportedbytheStandardQueryParser](https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser#TheStandardQueryParser-BooleanOperatorsSupportedbytheStandardQueryParser) - More information about boolean queries and how they work
+* [Writing Queries in Solr]([https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser\\#TheStandardQueryParser-SpecifyingTermsfortheStandardQueryParser](https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser#TheStandardQueryParser-SpecifyingTermsfortheStandardQueryParser) - Documentation and examples of the various methods of querying in Solr
+* [Boolean Search]([https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser\\#TheStandardQueryParser-BooleanOperatorsSupportedbytheStandardQueryParser](https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser#TheStandardQueryParser-BooleanOperatorsSupportedbytheStandardQueryParser) - More information about boolean queries and how they work
 * [Grouping](https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser#TheStandardQueryParser-GroupingTermstoFormSub-Queries) - Grouping query terms and phrases
 
 ## Field Aliasing
