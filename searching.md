@@ -116,7 +116,7 @@ You can also mix ranges with other search queries:
 
 The above topics only cover the basics of what is available with Solr querying. For more information about these and other query syntax, check out:
 
-* \[Solr's Query Syntax\]\(https://cwiki.apache.org/confluence/display/solr/Query+Syntax+and+Parsing\)
+* [Solr's Query Syntax](https://cwiki.apache.org/confluence/display/solr/Query+Syntax+and+Parsing)
 
 ## Field Aliasing
 
