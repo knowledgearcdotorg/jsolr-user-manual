@@ -4,7 +4,7 @@ JSolr identifies field names using the underscore suffix. For example, a categor
 
 JSolr provides a feature called field aliasing which allows you to specify an alternative name for a particular field, so, for example, the field name "date\_tdt" can be mapped to the alias "date".
 
-Reasons for aliasing a field vary; you may want to provide cleaner search urls for SEO purposes, or use names for fields which are easier to remember. Aliases are very useful for fields which store content in different languages because users only have to remember to use the alias and JSolr will handle the translation for them.
+Reasons for aliasing a field vary; you may want to provide cleaner search urls for SEO purposes, or use names for fields which are easier to remember. Aliases are very useful for fields which store content in different languages because users only have to remember to use the alias and JSolr will [handle the localization](/language-management.md) for them.
 
 ## Configuring an Alias
 
@@ -19,7 +19,7 @@ Locate "Query Field Aliases"; you can now specify one or more aliases. Aliases t
 
 Multiple aliases can be defined. List each one on a separate line.
 
-Field names that are translatable, such as description, can be specified with the wildcard suffix, I.e. alias:translatable\_field\_name\_txt\_\*. For example, if we wanted to specify an alias "description" for all description\_txt fields, we would specify the following alias:
+Field names that can be localized, such as description, can use the [localization placeholder](/language-management.md), I.e. alias:field\_name\_txt\_\*. For example, if we wanted to specify an alias "description" for all description\_txt fields, we would specify the following alias:
 
 > description:description\_txt\_\*
 
