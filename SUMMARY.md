@@ -8,6 +8,7 @@
 * [Indexing](indexing.md)
 * [Searching](searching.md)
     * [Advanced Search](advanced-search.md)
+    * [Field Aliasing](field-aliasing.md)
     * [Dimensions](dimensions.md)
     * [XML Form Definitions](xml-form-definitions.md)
     * [Form Fields](form-fields.md)
