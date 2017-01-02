@@ -147,7 +147,11 @@ The above topics only cover the basics of what is available with Solr querying. 
 * [Boolean Search]([https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser\\#TheStandardQueryParser-BooleanOperatorsSupportedbytheStandardQueryParser](https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser#TheStandardQueryParser-BooleanOperatorsSupportedbytheStandardQueryParser) - More information about boolean queries and how they work
 * [Grouping](https://cwiki.apache.org/confluence/display/solr/The+Standard+Query+Parser#TheStandardQueryParser-GroupingTermstoFormSub-Queries) - Grouping query terms and phrases
 
-## Field Aliasing
+## Multilingual Capabilities
+
+JSolr is designed to index and search across multiple languages and seamlessly integrates with Joomla multilingual configuration. Search results are localized to the language the user is currently viewing the site in.
+
+Language Management provides more information about multilingual capabilities and may be useful to programmers and webmasters.
 
 ## Advanced Features
 
@@ -156,6 +160,7 @@ There may be times when additional filters or advanced search may enhance the us
 Extend JSolr's search capabilities by:
 
 * [Providing an advanced search form for targeted queries and filters](/advanced-search.md)
+* [Aliasing for easier querying on field names](/field-aliasing.md)
 * [Using dimensions for targeting specific result types](/dimensions.md)
 * [Customizing the user experience with JForm XML form definitions](/xml-form-definitions.md)
 
