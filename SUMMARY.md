@@ -12,8 +12,8 @@
     * [Dimensions](dimensions.md)
     * [XML Form Definitions](xml-form-definitions.md)
     * [Form Fields](form-fields.md)
-        * [CalendarTool](calendartool.md)
-        * [Facets](facets.md)
+        * [Calendar](calendartool.md)
+        * [Facet](facets.md)
         * [QueryFilter](queryfilter.md)
         * SearchTool
         * [Sort](sort.md)

@@ -1,4 +1,4 @@
-# Facets
+# Facet
 
 The Facets form field provides a list of facets for a particular field indexed in Solr.
 
