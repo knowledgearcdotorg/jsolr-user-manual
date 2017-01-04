@@ -1,4 +1,4 @@
-# CalendarTool
+# Calendar
 
 The CalenderTool form field provides a dropdown list of date ranges.
 
