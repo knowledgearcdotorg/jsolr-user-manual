@@ -12,14 +12,13 @@ The JSolr Sort form field applies a sort field and direction to the search resul
 
 * `class` _\(optional\)_ is one or more CSS classes to apply to the field layout.
 
-
 ## Options
 
 The JSolr.Sort field must include one or more options. Depending on what is selected, each option will specify the sort and direction of the search results.
 
 ### Option Parameters
 
-* value \(mandatory\) the field value to sort on. Value is used as an alias for the actual Apache Solr sort field,
+* `value` \(mandatory\) the field value to sort on. Value is used as an alias for the actual Apache Solr sort field,
 * `sort` _\(mandatory\)_ the field to sort on. Must correspond to an indexed field name in Apache Solr which supports sorting. Must be specified unless the value is an empty string \(I.e. don't sort\),
 * `direction` _\(optional\)_ the order of the sorted results. Can be either `asc` for ascending or `desc` for descending.
 
