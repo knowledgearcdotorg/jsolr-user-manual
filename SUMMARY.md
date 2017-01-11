@@ -14,8 +14,7 @@
     * [Form Fields](form-fields.md)
         * [Calendar](calendartool.md)
         * [Facet](facets.md)
-        * [QueryFilter](queryfilter.md)
-        * SearchTool
+        * [SearchTool](searchtool.md)
         * [Sort](sort.md)
 * [Browsing](browsing.md)
 * [Extending JSolr](extending_jsolr.md)
