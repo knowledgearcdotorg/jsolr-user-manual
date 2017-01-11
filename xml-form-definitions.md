@@ -88,7 +88,7 @@ The facet fieldset provides a mechanism for users to filter or "drill-down" on p
 
 The tools fieldset provides additional query and filter inputs which may enhance search results, for example, only showing results where the query only appears in the heading or displaying only those results modified in the last 7 days.
 
-## Advanced Search Form Syntax
+## Advanced Search Form Syntax {#advancedsearchformsyntax}
 
 Like the standard JSolr search form, the advanced search form works like any other Joomla! form definition file.
 
@@ -183,6 +183,4 @@ Because Advanced Search expects these fields exist, it is highly recommended you
 ### The AS Fieldset
 
 The AS or Advanced Search fieldset specifies additional filters for providing highly customized search results.
-
-
 

@@ -6,5 +6,5 @@ Advanced search also provides filtering so that users can drill down to specific
 
 ## Customizing the Advanced Search Form
 
-You can add, modify or remove fields from the Advanced Search form to make advanced searching more relevant to your indexed information. For more information, check out the [Advanced Search Form Syntax](/Advanced Search Form Syntax) section of [XML Form Definitions](/xml-form-definitions.md).
+You can add, modify or remove fields from the Advanced Search form to make advanced searching more relevant to your indexed information. For more information, check out the [Advanced Search Form Syntax](#advancedsearchformsyntax) section of [XML Form Definitions](/xml-form-definitions.md).
 
