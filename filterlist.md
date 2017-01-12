@@ -18,12 +18,12 @@ The FilterList form field provides a dropdown list of generic filters.
 
 ## Options
 
-The JSolr.FilterList field must include one or more options. Depending on what is selected, each option will specify a date range that the search results should be limited to.
+The JSolr.FilterList field must include one or more options. Depending on what is selected, each option will specify a filter that the search results should be limited to.
 
 ### Option Parameters
 
 * `value` \(mandatory\) the value of the option. Value is used as an alias for the actual Apache Solr filter,
-* `filter` _\(mandatory\)_ the filter to apply. Must be a valid Apache Solr date range. Must be specified unless the value is an empty string \(I.e. do not apply a date range\).
+* `filter` _\(mandatory\)_ the filter to apply. Must be a plain-text value. Must be specified unless the value is an empty string \(I.e. do not apply a filter\).
 
 ## Example
 
