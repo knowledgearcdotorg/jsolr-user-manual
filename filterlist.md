@@ -2,9 +2,15 @@
 
 The FilterList form field provides a dropdown list of generic filters.
 
-For more specific list form fields, see:
+* `type` _\(mandatory\)_ must be JSolr.FilterList,
 
-* Calendar
+* `name` _\(mandatory\)_ is the unique name of the field,
+
+* `label` _\(optional\)_ _\(translatable\)_ is the descriptive title of the field,
+
+* `class` _\(optional\)_ is one or more CSS classes to apply to the field layout.
+
+* `default` _\(optional\)_ is the default list item value.
 
 ## Example
 
@@ -24,6 +30,10 @@ For more specific list form fields, see:
     <option value="odt" filter="text/plain">Text</option>  
 </field>
 ```
+
+For more specific list form fields, see:
+
+* [Calendar](/calendartool.md)
 
 
 

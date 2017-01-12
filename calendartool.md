@@ -6,6 +6,8 @@ The CalenderTool form field provides a dropdown list of date ranges.
 
 * `name` _\(mandatory\)_ is the unique name of the field,
 
+* `filter` _\(mandatory\)_ is the name of the Solr Index field to use for filtering the search results with the selected calendar range,
+
 * `label` _\(optional\)_ _\(translatable\)_ is the descriptive title of the field,
 
 * `class` _\(optional\)_ is one or more CSS classes to apply to the field layout.
