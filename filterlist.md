@@ -8,7 +8,7 @@ The FilterList form field provides a dropdown list of generic filters.
 
 * `filter` _\(mandatory\)_ is the name of the Solr Index field to use for filtering the search results with the selected option,
 
-* exactmatch \(mandatory\) specifies whether Solr should return only results which exactly match the selected option. Options are **true** or **false**. Default to **true**,
+* `exactmatch` _\(mandatory\)_ specifies whether Solr should return only results which exactly match the selected option. Options are **true** or **false**. Default to **true**,
 
 * `label` _\(optional\)_ _\(translatable\)_ is the descriptive title of the field,
 
