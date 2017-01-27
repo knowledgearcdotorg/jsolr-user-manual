@@ -2,8 +2,6 @@
 
 The JSolr Sort form field applies a sort field and direction to the search results.
 
-## Parameters
-
 * `type` _\(mandatory\)_ must be JSolr.Sort,
 
 * `name` _\(mandatory\)_ is the unique name of the field,
