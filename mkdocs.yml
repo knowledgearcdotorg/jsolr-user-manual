@@ -11,8 +11,8 @@ pages:
     - Field Aliasing: field-aliasing.md
     - Dimensions: dimensions.md
     - XML Form Definitions: xml-form-definitions.md
-    - Form Fields form-fields.md
-        - Calendar calendartool.md
+    - Form Fields: form-fields.md
+        - Calendar: calendartool.md
         - Facet: facets.md
         - FilterList: filterlist.md
         - Sort: sort.md
