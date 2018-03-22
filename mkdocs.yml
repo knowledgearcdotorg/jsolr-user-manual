@@ -12,13 +12,12 @@ pages:
     - Dimensions: dimensions.md
     - XML Form Definitions: xml-form-definitions.md
     - Form Fields: form-fields.md
-        - Calendar: calendartool.md
-        - Facet: facets.md
-        - FilterList: filterlist.md
-        - Sort: sort.md
+    - Calendar: calendartool.md
+    - Facet: facets.md
+    - FilterList: filterlist.md
+    - Sort: sort.md
     - Browsing: browsing.md
     - Extending JSolr: extending_jsolr.md
     - Plugin Events: plugin_events.md
     - Developing a Plugin: developing_a_plugin.md
     - Language Management: language-management.md
-
