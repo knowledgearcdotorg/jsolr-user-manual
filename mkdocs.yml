@@ -1,6 +1,7 @@
 site_name: JSolr
 
 pages:
+    - Home: index.md
     - Server Requirements: server_requirements.md
     - Installation: installation.md
     - Getting Started: getting_started.md
