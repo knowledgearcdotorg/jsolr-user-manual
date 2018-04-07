@@ -14,13 +14,15 @@ The Facets form field provides a list of facet values for a particular field ind
 
 * `class` _\(optional\)_ is one or more CSS classes to apply to the facet layout.
 
-* `showcount` _\(optional\)_ specifies whether the facet count should be shown. The default is to not show the count,
+* `showcount` _\(optional\)_ specifies whether the facet count should be shown. Use **true** to show the count or **false** otherwise. The default is to not show the count,
 
 * `sort` _\(optional\)_ specifies in what order the facets should be shown. The two options are **count** and **index**. The default is **count**,
 
-* `mincount` _\(optional\)_ specifies the minimum count a facet must have in order to be included in the list,
+* `mincount` _\(optional\)_ specifies the minimum count a facet must have in order to be included in the list. Must be a value greater than or equal to 0,
 
 * `limit` _\(optional\)_ is the maximum number of facet values to show. The default is to show all.
+
+* `ignorefilter` _\(optional\)_ ignores the filters applied to the facet so that the original list of facets are displayed. Setting to **true** will ignore the applied filter, **false** will apply the filter. The default is false.
 
 ## Example
 
@@ -35,8 +37,6 @@ The Facets form field provides a list of facet values for a particular field ind
     showcount="true"
     sort="count"
     mincount="1"
-    limit="5"/>
+    limit="5"
+    ignorefilter="true"/>
 ```
-
-
-
